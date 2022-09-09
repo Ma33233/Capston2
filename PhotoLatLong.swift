@@ -7,29 +7,29 @@
 
 import Foundation
 
-// MARK: - ImagesLatLong
-//struct ImagesLatLong: Codable {
-//    fileprivate let photo: Photo
-//    let stat: String
-//}
-//
-//// MARK: - Photo
-//private struct Photo: Codable {
-//    let id: String
-//    let location: Location
-//}
-//
-//// MARK: - Location
-//struct Location: Codable {
-//    let latitude, longitude, accuracy, context: String
-//    let locality, neighbourhood, region, country: Country
-//}
-//
-//// MARK: - Country
-//struct Country: Codable {
-//    let content: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case content = "_content"
-//    }
-//}
+ //MARK: - ImagesLatLong
+struct ImagesLatLong: Codable {
+    let photo: Photo2
+    let stat: String
+}
+
+// MARK: - Photo
+struct Photo2: Codable {
+    let id: String
+    let location: Location
+}
+
+// MARK: - Location
+struct Location: Codable {
+    let latitude, longitude, accuracy, context: String
+    let locality, neighbourhood, region, country: Country
+}
+
+// MARK: - Country
+struct Country: Codable {
+    let content: String
+
+    enum CodingKeys: String, CodingKey {
+        case content = "_content"
+    }
+}
